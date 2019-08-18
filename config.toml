@@ -2,3 +2,10 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Aaron | MSFT"
 theme = "ananke"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "About"
+    name = "About"
+    url = "/me/"
