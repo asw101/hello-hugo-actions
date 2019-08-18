@@ -1,10 +1,12 @@
-baseURL = "http://example.org/"
+baseURL = ""
 languageCode = "en-us"
 title = "Aaron | MSFT"
 theme = "ananke"
 
+[params]
+  recent_posts_number = 5
+  
 [menu]
-
   [[menu.main]]
     identifier = "About"
     name = "About"
