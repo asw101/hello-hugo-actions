@@ -1,13 +1,7 @@
 baseURL = ""
 languageCode = "en-us"
-title = "Aaron | MSFT"
+title = "My First Hugo Site"
 theme = "ananke"
 
 [params]
   recent_posts_number = 5
-  
-[menu]
-  [[menu.main]]
-    identifier = "About"
-    name = "About"
-    url = "/me/"
