@@ -1,4 +1,4 @@
-baseURL = "https://190800actions.blob.core.windows.net/quickstart"
+baseURL = ""
 languageCode = "en-us"
 title = "My First Hugo Site"
 theme = "ananke"
