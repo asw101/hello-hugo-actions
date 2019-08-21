@@ -23,11 +23,10 @@ jobs:
     - name: Run hugo + azcopy
       env:
         SOURCE_DIRECTORY: quickstart/
-        AZURE_STORAGE_CONTAINER_URL: https://190800actions.blob.core.windows.net/quickstart/
+        AZURE_STORAGE_CONTAINER_URL: https://190800actions.blob.core.windows.net/$web/
         AZURE_STORAGE_SAS_TOKEN: ${{ secrets.AZURE_STORAGE_SAS_TOKEN }}
       run: |
         echo $PWD
         cd $SOURCE_DIRECTORY
         hugo -v
         azcopy sync public/ "${AZURE_STORAGE_CONTAINER_URL}${AZURE_STORAGE_SAS_TOKEN}" --delete-destination=true
-        
